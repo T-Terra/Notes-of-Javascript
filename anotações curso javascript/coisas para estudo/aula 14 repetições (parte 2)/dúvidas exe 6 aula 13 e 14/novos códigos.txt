@@ -1,0 +1,26 @@
+select: no HTML faz uma área para seleção 
+option: coloca valor dentro do select
+
+exe 6: 
+
+function gerar() {
+    let num = document.querySelector('input#txtnum')
+    let tab = document.querySelector('select#seltab')
+
+    if (num.value.length == 0){
+        window.alert('[erro] Insira os dados!')
+    } else { 
+        let n = Number(num.value)
+
+        let c = 1
+
+        tab.innerHTML = ''
+        while (c <= 10) {
+            let item = document.createElement('option') // cria um option com javascript
+            item.text = `${n} x ${c} = ${n*c}` // executa a tabuada 
+            item.value = `tab${c}` // dá valor a cada item muito útil para o PHP 
+            tab.appendChild(item) 
+            c++
+        }
+    }
+}

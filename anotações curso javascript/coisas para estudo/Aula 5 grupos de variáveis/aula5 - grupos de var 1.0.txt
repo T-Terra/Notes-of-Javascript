@@ -1,0 +1,20 @@
+Data types
+
+	tipos primitivos -> TYPEOF
+
+number 
+    >infinity
+    >NaN
+
+string = nomes e letras ""
+
+boolean = true or false
+
+null = nulo ou fazio, é um objeto para o javascript.
+
+undefined = indefinido
+
+object 
+     >Array = vetor []{}
+
+Function = função (){}

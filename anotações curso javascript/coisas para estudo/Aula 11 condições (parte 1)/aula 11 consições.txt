@@ -1,0 +1,104 @@
+exercícios no javascript: 
+
+aula11exe01.js
+
+var vel = 55
+console.log(`Sua velocidade é de ${vel}km/h`)
+//condição simples
+if (vel >= 60) {
+    console.log('Você está a cima do limite de velocidade, Multado!!!')
+}
+console.log('Dirija com cuidado.')
+
+aula11exe02.js 
+
+var pais = 'Brasil'
+console.log(`Vivendo no(a) ${pais}`)
+if (pais == 'Brasil') {
+    console.log('Você é Brasileiro!')
+} else {
+    console.log('Você é estrangeiro!')
+}
+
+
+
+
+
+
+Exercícios no HTML:
+
+
+
+
+
+aula11exe03.html
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h
+    <input type="button" value="Verificar" id="botao" onclick="calcular()"> 
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.getElementById('txtvel')
+            var vel = Number(txtv.value)
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Sua velocidade atual é de ${vel} km/h</p>`
+            if (vel >= 60){
+                res.innerHTML += `<p>Você foi <strong>MULTADO!</strong> por excesso de velocidade</p>` 
+            }
+            res.innerHTML += ` <p>Dirija com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+
+</html>
+
+aula11exe04.html
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar nacionalidade</title>
+ 
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Qual seu país de nascimento?</p>
+    <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtn = window.document.querySelector('input#txtn1')
+            var pais = String(txtn.value)
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Vivendo no(a) ${pais}`
+            if (pais == 'brasil'){
+                res.innerHTML += `<p>Você é brasileiro</p>` 
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro!!</p>`
+            }
+        }   
+
+    </script>
+    
+</body>
+</html>
+
+
+

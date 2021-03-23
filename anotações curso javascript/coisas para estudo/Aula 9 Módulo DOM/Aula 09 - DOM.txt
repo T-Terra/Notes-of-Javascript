@@ -1,0 +1,25 @@
+								Árvore DOM 
+								
+							                 Window
+						Location       >>        Document    >>      history
+								         |
+								         |
+								     HTML
+							            <                   >
+							Head                               Body ------> (H1, p, div)
+							    |				       		     |
+							    |                                              Strong
+						          <             >
+						Meta                      Title
+
+|<Seletores de navegação da árvore DOM>
+
+Por marga (tag) ----> cod: getElementsByTagName( )
+
+Por ID  -----> cod: getElementById( )
+
+Por Nome (name) -----> cod: getElementsByName( )
+
+Por classe (class) -----> cod: getElementsByClassName( )
+
+Por seletor -----> querySelector( ) ou querySelectorAll( )    OBS: Todo ID é representado por # e toda classe(class) por || Usar Sintax do CSS

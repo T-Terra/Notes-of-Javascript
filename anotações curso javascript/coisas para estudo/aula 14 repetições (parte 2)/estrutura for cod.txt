@@ -1,0 +1,5 @@
+estrutura for repetições:
+
+for (var c = 1; c<=500; c++) {
+    console.log(`passo ${c}`)
+}

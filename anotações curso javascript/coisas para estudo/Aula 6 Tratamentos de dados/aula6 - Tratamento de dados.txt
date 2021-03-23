@@ -1,0 +1,41 @@
+o símbolo de + serve para concatenar algo 
+
+para converter string > número
+
+Number.parseInt(n) >>> número inteiro 
+
+Number.parseFloat(n) >>> números flutuantes
+
+ou 
+
+utilizar somente Number(n) 
+
+
+para converter número > string
+
+String(n)
+ou
+n.toString()
+
+Formatando Strings 
+
+var s = 'JavaScript'
+
+'eu estou aprendendo s' // não faz interpolação 
+'eu estou aprendendo' + s // usa concatenação 
+'eu estou aprendendo ${s}' // usa template string // placeholder
+
+s.length // quantos caracteres a string tem
+s.toUpperCase() // jogar uma String para maiúscula
+s.toLowerCase() // jogar uma String para minúscula
+
+Formatando Números 
+
+n1.toFixed(2) // para ter duas casa decimais no número
+'1545.50'
+
+n1.toFixe(2).replace('.', ',') // para trocar o ponto por vírgula é usado o .replace
+'1545,50'
+
+n1.toLocaleString('pt-BR', (style: 'currency', currency: 'BRL')) // Para converter moedas por região
+

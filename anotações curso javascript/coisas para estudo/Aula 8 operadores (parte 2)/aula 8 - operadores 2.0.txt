@@ -1,0 +1,56 @@
+Relacionais
+ 
+valores (boolean) 
+
+5 > 2 -> true
+
+7 < 4 -> false
+
+8 >= 8 -> true
+
+9 <= 7 -> false
+
+5 == 5 -> true 
+
+4 != 4 -> false
+-----------------------------------------------------------------------------------------
+Operadores Lógicos 
+
+! --> negação  (não pode ser da cor laranja) --> (entrega qualquer cor)
+
+&& --> conjunção (cor laranja (e) cor azul)
+
+|| --> disjunção (pode ser laranja (ou) azul)
+
+-----------------------------------------------------------------------------------------
+
+! --> true --> false
+        false --> true
+
+&& --> (true && true --> true)
+       true && false --> false     <-- operador binário
+       false && true --> false
+       false && false --> false
+
+|| --> true && true --> true
+       true && false --> true     <-- operador binário
+       false && true --> true
+       false && false --> false
+
+-----------------------------------------------------------------------------------------
+ordem de execução 
+
+1° ! 
+2° && 
+3° || 
+-----------------------------------------------------------------------------------------
+
+operador ternário 
+
+                 |-> o que acontece se for true
+teste (?) true (:) false--> o que acontece se for false
+   |
+faz o teste lógico
+
+ex:
+        média>= 7.0 ? "aprovado" : "reprovado"

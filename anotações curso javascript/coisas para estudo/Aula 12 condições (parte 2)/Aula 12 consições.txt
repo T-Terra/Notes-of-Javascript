@@ -1,0 +1,216 @@
+Exercícios de condições aninhadas: 
+
+exe em javascript--->
+
+-----------------------------------------------------
+aula12axe01.js		
+
+var idade = 35
+if (idade < 16) {
+    console.log('Não vota')
+} else if (idade < 18 || idade >= 65) {
+    console.log('Voto opcional')
+    
+} else {
+    console.log('voto obrigatório')
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+aula12exe02.js
+
+var agora = new Date()
+var hora = agora.getHours()
+console.log(`Agora são ${hora} Horas`)
+if (hora >= 0 && hora < 6) {
+    console.log('Boa madrugada!!')
+} else if (hora >= 6 && hora < 12) {
+    console.log('Bom dia!!!')
+} else if (hora >= 12 && hora < 18) {
+    console.log('Boa tarde!!')
+} else {
+    console.log('Boa noite!!!')
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+aula12exe03.js
+
+var dia = new Date()
+var diasem = dia.getDay()
+
+//onsole.log(`${diasem}`)
+
+switch (diasem) {
+    case 0: 
+        console.log('Domingo')
+    break
+    case 1:
+        console.log('Segunda')
+    break
+    case 2:
+        console.log('Terça-feira')
+    break
+    case 3:
+        console.log('Quarta-feira')
+    break
+    case 4:
+        console.log('Quinta-feira')
+    break
+    case 5:
+        console.log('Sexta-feira')
+    break
+    case 6:
+        console.log('Sábado')
+    break
+    default:
+        console.log('[erro] Dia inválido')
+    break
+}
+
+
+=======================================================================================================================
+
+
+Exercícios em HTML:
+
+aula12exe1.1.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições 2020</title>
+   
+</head>
+<body>
+    <h1>Eleições 2020</h1>
+
+    <input type="number" name="txtn1" id="txtn1"/>
+    <input type="button" value="enviar" onclick="enviar()" id="botao"/>
+    <div id='res'>
+
+    </div>
+
+    <script>
+        function enviar() {
+            var txte = window.document.querySelector('input#txtn1')
+            var str = Number(txte.value)
+            var res = window.document.querySelector('div#res')
+            if (str < 16) {
+                document.write('Não vota.')
+            } else if (str < 18 || str >= 65) {
+                document.write('Voto opcional.')
+            } else if (str >= 18) {
+                document.write('Voto obrigatório.')
+            } 
+
+        }
+
+    </script>
+
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------
+
+aula12exe2.1.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <style>
+        input#botao{
+            width: 300px;
+            height: 300px;
+            font-size: 25px;
+        }
+       
+    </style>
+</head>
+<body>
+    <input type="button" value="Clique para ver o tempo" onclick="clicar()" id="botao"/> 
+    <div id="res">
+
+    </div>
+    <script>
+        var agora = new Date() //new Date (pega a hora atual do sistema)
+        var hora = agora.getHours() //Chama o método new Date para a execução 
+        var madru = 'Boa madrugada!!!'
+        var dia = 'Bom dia!!!'
+        var tarde = 'Boa tarde!!!'
+        var noite = 'Boa noite!!!'
+        function clicar(){
+            document.write(`Agora são exatamente ${hora} Horas`)
+                if (hora >= 0 && hora < 6) {
+                    document.write('<br>Boa madrugada!!</br>')
+                } else if (hora >= 6 && hora < 12){
+                    document.write(`<br>${dia}</br>`) 
+                } else if (hora >= 12 && hora < 18) {
+                    document.write('<br>Boa tarde!!</br>')
+                } else if (hora >= 18 && hora <= 23) {
+                    document.write('<br>Boa noite!!</br>')
+                }
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------
+
+aula12exe3.1.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias da semana</title>
+</head>
+<body>
+    <input type="button" value="Descubra o dia de hoje" onclick="clicar()" id="botao"/>
+    <script>
+        var dia = new Date()
+        var hoje = dia.getDay()
+        function clicar() {
+            switch (hoje) {
+                case 0:
+                    document.write('Hoje é Domingo.')
+                break
+                case 1:
+                    document.write('Hoje é segunda-feira.')
+                break
+                case 2:
+                document.write('Hoje é Terça-feira.')
+                break
+                case 3:
+                    document.write('Hoje é Quarta-feira.')
+                break
+                case 4:
+                    document.write('Hoje é Quinta-feira.')
+                break
+                case 5:
+                    document.write('Hoje é Sexta-feira!!!! ')
+                break
+                case 6: 
+                    document.write('Hoje é Sábado.')
+                break
+            }
+            document.write('<br><strong>Tenha uma boa semana!</strong></br>') 
+
+
+
+        }
+
+    </script>
+ 
+</body>
+</html>

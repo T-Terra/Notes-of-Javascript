@@ -1,0 +1,22 @@
+Identificadores de variáveis
+
+> Podem começar com LETRA, $ OU _
+
+> Não podem começar com números 
+
+> É possível usar letras ou números 
+
+> É possível usar acentos e símbolos 
+
+> Não podem conter ESPAÇOS
+
+> Não podem ser palavras RESERVADAS ex: function, alert e etc
+
+
+DICAS DE UTILIZAÇÃO DE NOMES PARA VARIÁVEIS
+
+> Maiúsculas e minúsculas fazem diferença
+
+> Tente escolher nomes coerentes para as variáveis
+
+> Evite se tornar 'Programador alfabeto' ou um 'Programador contador'
